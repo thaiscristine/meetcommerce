@@ -85,9 +85,10 @@
 
 					<div class="center">
 
-						<a href="#" class="button button-3d button-grey button-rounded button-xlarge">Os Palestrantes</a>
+						<a href="#palestrantes" class="scrollSuave button button-3d button-grey button-rounded button-xlarge">Os Palestrantes</a>
 
-						<a href="#" class="button button-3d button-lightblue button-rounded button-xlarge">Quero Participar</a>
+						<a href="https://www.sympla.com.br/meetcommerce-2017__171974" target=
+						"_blank" class="button button-3d button-lightblue button-rounded button-xlarge">Quero Participar</a>
 
 					</div>
 
@@ -101,7 +102,60 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap">
+			<div class="content-wrap" id="palestrantes">
+
+				<div class="section nobottommargin">
+					<div class="container clearfix">
+
+						<div class="heading-block center">
+                            <h2>SOBRE O MEETCOMMERCE</h2>
+						</div>
+
+						<div class="container clearfix">
+
+							<div class="col_one_fourth nobottommargin">
+								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-calendar i-alt"></i></a>
+									</div>
+									<h3> <span class="subtitle">Evento especializado em desenvolvimento, segurança e performance de e-commerce.</span> </h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth nobottommargin">
+								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-map i-alt"></i></a>
+									</div>
+									<h3><span class="subtitle">Palestrantes profissionais da área que estão há anos no desenvolvimento do e-commerce</span></h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth nobottommargin">
+								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-microphone2 i-alt"></i></a>
+									</div>
+									<h3><span class="subtitle">Nosso foco é você que possui um e-commerce, quer lançar um ou que trabalha na área.</span></h3>
+								</div>
+							</div>
+
+							<div class="col_one_fourth nobottommargin col_last">
+								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-food2 i-alt"></i></a>
+									</div>
+									<h3><span class="subtitle">Encontro presencial dia 02 de agosto às 19h</span></h3>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+
+
+						</div>
+
+					</div>
+				</div>
 
 				<div class="container clearfix">
 
@@ -158,58 +212,7 @@
 
 				</div>
 
-				<div class="section nobottommargin">
-					<div class="container clearfix">
 
-						<div class="heading-block center">
-                            <h2>SOBRE O MEETCOMMERCE</h2>
-						</div>
-
-						<div class="container clearfix">
-
-							<div class="col_one_fourth nobottommargin">
-								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-calendar i-alt"></i></a>
-									</div>
-									<h3>Interactive Sessions<span class="subtitle">Lorem ipsum dolor sit</span></h3>
-								</div>
-							</div>
-
-							<div class="col_one_fourth nobottommargin">
-								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-map i-alt"></i></a>
-									</div>
-									<h3>Great Locations<span class="subtitle">Officia ipsam laudantium</span></h3>
-								</div>
-							</div>
-
-							<div class="col_one_fourth nobottommargin">
-								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-microphone2 i-alt"></i></a>
-									</div>
-									<h3>Global Speakers<span class="subtitle">Laudantium cum dignissimos</span></h3>
-								</div>
-							</div>
-
-							<div class="col_one_fourth nobottommargin col_last">
-								<div class="feature-box fbox-effect fbox-center fbox-outline fbox-dark nobottomborder">
-									<div class="fbox-icon">
-										<a href="#"><i class="icon-food2 i-alt"></i></a>
-									</div>
-									<h3>In-between Meals<span class="subtitle">Perferendis accusantium quae</span></h3>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-
-						
-						</div>
-
-					</div>
-				</div>
 				<div class="section nobottommargin">
 					<div class="container clearfix">
 
@@ -357,13 +360,15 @@
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- Footer Scripts
 	============================================= -->
+
 	<script type="text/javascript" src="js/functions.js"></script>
 
 	<script type="text/javascript">
 		jQuery(document).ready( function($){
-			var newDate = new Date(2016, 9, 31);
+			var newDate = new Date(2017, 7, 2 , 7, 0,0);
 			$('#countdown-ex1').countdown({until: newDate});
 		});
 
@@ -423,6 +428,16 @@
 				 overviewMapControl: false
 			 }
 		});
+
+
+        var $doc = $('html, body');
+        $('.scrollSuave').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+        });
+
 	</script>
 
 </body>
