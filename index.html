@@ -219,7 +219,7 @@
 					<div class="container clearfix">
 
 						<div class="center dark">
-                            <h2>GARANTA JÁ SEU INGRESSO <br /><small style="color:#fff; text-transform: none">Seu ingresso garante acesso a 3 palestras + coffe break</small></h2>
+                            <h2>GARANTA JÁ SEU INGRESSO <br /><small style="color:#fff; text-transform: none">Seu ingresso garante acesso a 3 palestras + coffee break</small></h2>
 						</div>
 
 						<div class="container clearfix center">
@@ -285,7 +285,12 @@
 
 							<div class="widget widget_links clearfix">
 
-								<h4>Blog</h4>
+								<h4>Patrocínio</h4>
+
+                                <ul>
+                                    <li><img src="images/brunatha.png" height="30" width="159" alt="Brunatha"></li>
+                                    <li><img src="images/33amd.jpg" height="50" width="50" style="float: left; margin-right: 20px;" alt="33AMD"><b style="font-size: large">KAHELEN<br>LOJAS</b></li>
+                                </ul>
 
 							</div>
 
@@ -325,7 +330,7 @@
 
 					<div class="col_one_third col_last">
 
-						<div class="widget subscribe-widget clearfix">
+						<!--div class="widget subscribe-widget clearfix">
 							<h5><strong>Inscreva-se para receber o nosso newsletter</strong></h5>
 							<div class="widget-subscribe-form-result"></div>
 							<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
@@ -337,7 +342,7 @@
 									</span>
 								</div>
 							</form>
-						</div>
+						</div-->
 					<!--	<div id="google-map4" style="height: 300px;" class="gmap bottommargin"></div>-->
 
 						<div class="widget clearfix" style="margin-bottom: -20px;">
@@ -379,14 +384,15 @@
 	<script type="text/javascript" src="js/events-data.js"></script>
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown-pt-BR.js"></script>
 	<!-- Footer Scripts
 	============================================= -->
 
 	<script type="text/javascript" src="js/functions.js"></script>
 
 	<script type="text/javascript">
-		jQuery(document).ready( function($){
-			var newDate = new Date(2017, 7, 2 , 7, 0,0);
+        jQuery(document).ready(function ($) {
+			var newDate = new Date(2017, 7, 2 , 19, 0,0);
 			$('#countdown-ex1').countdown({until: newDate});
 		});
 
